@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <section class="reserver">
+        <h1 class="titre">Réserver votre table</h1>
+            <div class="contenu">
+                    <div class="tableau">
+                        <select name="jour" id="jour">
+                            <option value="Jour">Jour</option>
+                            <option value="Lundi">Lundi</option>
+                            <option value="Mardi">Mardi</option>
+                            <option value="Mercredi">Mercredi</option>
+                            <option value="Jeudi">Jeudi</option>
+                            <option value="Vendredi">Vendredi</option>
+                            <option value="Samedi">Samedi</option>
+                            <option value="Dimanche">Dimanche</option>
+                        </select>
+
+                        <select name="Heure Midi" id="Heure Midi">
+                            <option value="Heure Déjeuner">Heure Déjeuner</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:20">12:20</option>
+                            <option value="12:40">12:40</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:20">13:20</option>
+                            <option value="13:40">13:40</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:20">14:20</option>
+                            <option value="14:40">14:40</option>
+                        </select>
+
+                        <select name="Heure Soir" id="Heure Soir">
+                            <option value="Heure Dinner">Heure Dinner</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:20">19:20</option>
+                            <option value="19:40">19:40</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:20">20:20</option>
+                            <option value="20:40">20:40</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:20">21:20</option>
+                            <option value="21:40">21:40</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Nom">
+                        <input type="text" placeholder="Prénom">
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Nombre de personees">
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Allergies">
+                        <input type="submit" value="Réserver">
+                    </div>
+                
+            </div>
+    </section>
+</body>
+</html>

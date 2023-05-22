@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--NOM_PAGE-->
+    <title>Quai Antique</title>
+
+<!--PAGES CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--POLICE-->
+</head>
+
+<body>
+
+<!--PAGE_ACCUEIL-->
+    <header>
+        <img class="logo" src="./images/logo-removebg-preview.png" alt="">
+        <!--MENU_NAVIAGTION-->
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="page3.html">La Carte</a></li>
+                <li><a href="#section Galerie">Galerie</a></li>
+                <li><a href="#section Contact">Contact</a></li>
+                <a href="page2.html" class="button">Réservation</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-garde" id="page-garde">
+        <img src="./images/logo-removebg-preview.png" alt="">
+        <div class="contenu">
+            <a href="page2.html" class="button-réserve">Réserver Maintenat</a>
+        </div>
+    </section>
+<!--FIN_PAGE_ACCUEIL-->
+
+<!--GALERIE-->
+<section class="sec1">
+        <h2 id="section Galerie" class="titre">Galerie</h2>
+        <div class="menu">
+            <img src="./images/plat1.jpg" class="plat1">
+            <img src="./images/plat2.jpg" class="plat1">
+            <img src="./images/plat3.jpg" class="plat1">
+            <img src="./images/plat4..png" class="plat1">
+            <img src="./images/dessert1.jpeg" class="plat1">
+            <img src="./images/dessert2..png" class="plat1">
+        </div>
+</section>
+<!--FIN GALERIE-->
+
+<!--CONTACT-->
+<section class="sec2" id="section Contact">
+    <div class="titre_contact">
+        <h2 class="c1">Contact</h2>
+    </div>
+    <div class="formulaire">
+        <h3>Envoyer Message</h3>
+        <div class="button-contact">
+            <input type="text" placeholder="Nom Complet">
+        </div>
+        <div class="button-contact">
+            <input type="email" placeholder="@">
+        </div>
+        <div class="button-contact">
+            <textarea placeholder="Votre message..."></textarea>
+        </div>
+        <div class="button-contact">
+            <input type="submit" value="Envoyer">
+        </div>
+    </div>
+</section>
+<!--FIN CONTACT-->
+
+<!--INFORMATIONS-->
+<section>
+    <div class="informations">
+        <div class="adresse">
+            <h2>Adresse</h2>
+            <p>60 Av. de Chambéry<br>73190, Challes-les-Eaux</p>
+        </div>
+        <div class="horaire">
+            <h3>Horaire d'ouverture</h3>
+            <h4>Du Lundi au Dimanche</h4>
+            <p>Service du midi<br>12:00 à 14:40</p>
+            <p>Service du Soir <br>19:00 à 21:40</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="Copyright">
+        <p>Copyright 2023 ECF_BintaDiallo</p>
+    </div>
+</section>
+
+<!--JAVASCRIPT-->
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header=document.querySelector('header')
+        header.classList.toggle("sticky", window.scrollY > 0)
+});
+</script>
+</body>
+</html>
